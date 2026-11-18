@@ -34,7 +34,7 @@ weather-app/
 
 1. Скачайте проект:
    ```bash
-   git clone https://github.com/<ваш-логин>/weather-app.git
+   git clone https://github.com/Steammaestro/weather-app.git
    cd weather-app
    ```
    Или нажмите **Code → Download ZIP** на странице репозитория и распакуйте архив.
@@ -65,24 +65,3 @@ weather-app/
 Документация: https://open-meteo.com/en/docs
 
 > Open-Meteo бесплатен для некоммерческого использования (до ~10 000 запросов в сутки). Ссылка на источник данных в футере сайта обязательна.
-
-## Публикация на GitHub
-
-1. Создайте на github.com новый пустой репозиторий `weather-app` (без README).
-2. В папке проекта выполните:
-   ```bash
-   git init
-   git add .
-   git commit -m "Add weather app"
-   git branch -M main
-   git remote add origin https://github.com/<ваш-логин>/weather-app.git
-   git push -u origin main
-   ```
-3. По желанию включите сайт онлайн: **Settings → Pages → Branch: main / (root) → Save**.
-   Через минуту сайт откроется по адресу `https://<ваш-логин>.github.io/weather-app/`.
-
-## Что можно улучшить
-
-- Кнопка «Моё местоположение» (`navigator.geolocation`)
-- Переключатель °C / °F
-- Запоминание последнего города (`localStorage`)
