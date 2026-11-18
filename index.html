@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Простая погода: текущие условия и прогноз на 5 дней">
+  <title>Погода</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <!-- Поиск города -->
+    <form id="search-form" class="search">
+      <input id="city-input" type="search" placeholder="Город" aria-label="Название города" autocomplete="off" required>
+      <button type="submit">Найти</button>
+    </form>
+
+    <!-- Сообщения: загрузка и ошибки -->
+    <p id="status" class="status" role="status"></p>
+
+    <!-- Погода (показывается после ответа API) -->
+    <section id="weather" hidden>
+      <p id="city" class="city"></p>
+
+      <div class="now">
+        <div>
+          <div id="temp" class="temp"></div>
+          <p id="desc" class="desc"></p>
+        </div>
+        <div id="icon" class="icon" aria-hidden="true"></div>
+      </div>
+
+      <dl class="details">
+        <div><dt>Ощущается</dt><dd id="feels"></dd></div>
+        <div><dt>Влажность</dt><dd id="humidity"></dd></div>
+        <div><dt>Ветер</dt><dd id="wind"></dd></div>
+      </dl>
+
+      <ul id="forecast" class="forecast" aria-label="Прогноз на 5 дней"></ul>
+    </section>
+
+    <footer>
+      <a href="https://open-meteo.com/" target="_blank" rel="noopener">Weather data by Open-Meteo.com</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
