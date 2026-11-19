@@ -1,5 +1,5 @@
 # Weather App — приложение погоды на Open-Meteo API
-
+https://www.figma.com/community/file/1705100392756711888/weather-app-mockup
 Минималистичный сайт погоды: введите город и получите текущую погоду и прогноз на 5 дней.
 Проект написан на чистых HTML, CSS и JavaScript — без фреймворков, сборщиков и API-ключей.
 
